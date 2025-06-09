@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run KeyGenie Bot",
+      "type": "shell",
+      "command": "python3",
+      "args": ["bot.py"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test Setup",
+      "type": "shell",
+      "command": "python3",
+      "args": ["test_setup.py"],
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
