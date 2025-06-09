@@ -31,5 +31,30 @@ See [QUICK_START.md](QUICK_START.md) for a fast setup guide.
 - `demo.py` — Functionality demonstration
 - `DELIVERY_SUMMARY.md` — Complete feature list
 
+## Deployment
+
+### Local
+Run the bot with:
+```bash
+python3 bot.py
+```
+after configuring your `.env` file.
+
+### Heroku
+1. Commit all changes and push to GitHub.
+2. Create a Heroku app and connect your GitHub repo.
+3. Set your environment variables in the Heroku dashboard (Settings > Reveal Config Vars).
+4. Deploy. Heroku will use the `Procfile` to start the bot.
+
+### Vercel (Experimental)
+> Note: Vercel is not ideal for long-running bots, but you can deploy for demo/testing.
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run `vercel` and follow the prompts.
+3. Set your environment variables in the Vercel dashboard.
+4. The bot will attempt to start via `api/index.py`.
+
+---
+For both platforms, ensure your `.env` or environment variables are set correctly (see `.env.example`).
+
 ## License
 MIT
